@@ -10,9 +10,9 @@ app.set('view engine', 'ejs')
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://DaintreeAdmin:DainPass@cluster0.sbgx7.mongodb.net/my_database', { useNewUrlParser: true });
 
-// const bodyParser = require('body-parser')
-// app.use(bodyParser.json())
-// app.use(bodyParser.urlencoded({ extended: true }))
+//  const bodyParser = require('body-parser')
+//  app.use(bodyParser.json())
+//  app.use(bodyParser.urlencoded({ extended: true }))
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json({limit: '50mb'}));
@@ -75,6 +75,9 @@ app.get('/', homeController)
 
 
 app.get('/eng', homeController)
+
+const landingController=require('./controllers/landingPage')
+app.get('/landingpage',landingController)
 
 const aboutController = require('./controllers/about')
 app.get('/about', aboutController)

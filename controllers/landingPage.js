@@ -14,7 +14,7 @@ module.exports=async (req,res)=>{
         email=data.email
     }
     console.log(req.session)
-    await res.render('index',{
+    res.render('landingPage',{
            blogposts,
            errors:req.flash('validationErrors'),
             username:username,
