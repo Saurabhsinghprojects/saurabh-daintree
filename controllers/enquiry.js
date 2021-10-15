@@ -8,7 +8,9 @@ module.exports=(req,res)=>{
             req.flash('validationErrors',validationErrors)
             req.flash('data',req.body)
             // req.session.validationErrors=validationErrors
-            return res.redirect('/')
+            res.redirect(enquireRedirect)
+            enquireRedirect=null;
+            return;
         }
         res.redirect('/')
     })

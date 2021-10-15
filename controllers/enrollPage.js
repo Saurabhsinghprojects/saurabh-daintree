@@ -15,7 +15,7 @@ module.exports=async (req,res)=>{
     }
     console.log(req.session)
     enquireRedirect= req.url;
-    res.render('index',{
+    res.render('enrollPage',{
            blogposts,
            errors:req.flash('validationErrors'),
             username:username,

@@ -41,6 +41,7 @@ global.loggedIn = null;
 global.recentBlogs = null;
 global.redirectUser = false;
 global.redirectPost = null;
+global.enquireRedirect = null;
 
 app.use("*", async (req, res, next) => {
   loggedIn = req.session.userId;
@@ -78,6 +79,8 @@ app.get('/eng', homeController)
 
 const landingController=require('./controllers/landingPage')
 app.get('/landingpage',landingController)
+
+
 
 const aboutController = require('./controllers/about')
 app.get('/about', aboutController)
@@ -232,5 +235,8 @@ app.post('/curationanswer/store/:id', storeCurationanswerController)
 //change role
 const changeroleController = require('./controllers/changerole')
 app.post('/role/change',changeroleController)
+
+const enrollController=require('./controllers/enrollPage')
+app.get('/enrollnow',enrollController)
 
 app.use((req, res) => res.render('notfound'));

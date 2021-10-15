@@ -34,15 +34,14 @@ const UserSchema= new Schema({
         default:0
     }
 });
-
+var salt = bcrypt.genSaltSync(10);
 UserSchema.plugin(uniqueValidator);
 UserSchema.pre('save',function(next){
     const user=this
     
-    bcrypt.hash(user.password,10,(error,hash)=>{
-        user.password=hash
+    var hash = bcrypt.hashSync(user.password);
+    user.password= hash;
         next()
-    })
 })
 
 const User= mongoose.model('User',UserSchema);

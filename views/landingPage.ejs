@@ -21,16 +21,23 @@
           width: 33vw;
           left: 2vw;
           font-size: 3vw;
-          
+
         }
 
         .postersecondimg {
-          top: 35vw;
-          left: 27vw;
+          top: 54vw;
+          left: 7vw;
           height: 13vw;
           font-size: 3vw;
         }
-        .buttonstylemain{
+        .posterthirdimg {
+          top: 55vw;
+    right: -55vw;
+          height: 13vw;
+          font-size: 3vw;
+        }
+
+        .buttonstylemain {
           font-size: 13px;
           height: 10vw;
           padding-top: 8px !important;
@@ -52,16 +59,23 @@
           width: 33vw;
           left: 2vw;
           font-size: 4vw;
-       
+
         }
 
         .postersecondimg {
-          top: 35vw;
-          left: 27vw;
+          top: 54vw;
+          left: 7vw;
           font-size: 4vw;
           height: 13vw;
         }
-        .buttonstylemain{
+        .posterthirdimg {
+          top: 55vw;
+    right: -55vw;
+          font-size: 4vw;
+          height: 13vw;
+        }
+
+        .buttonstylemain {
           font-size: 15px;
           height: 10vw;
           padding-top: 8px !important;
@@ -86,12 +100,19 @@
         }
 
         .postersecondimg {
-          left: 28vw;
-          top: 39vw;
+          left: 6vw;
+    top: 54vw;
           font-size: 2vw;
           height: 6vw;
         }
-        .buttonstylemain{
+        .posterthirdimg {
+          top: 55vw;
+    right: -55vw;
+          font-size: 2vw;
+          height: 6vw;
+        }
+
+        .buttonstylemain {
           font-size: 2vw;
           height: 4vw;
         }
@@ -115,12 +136,19 @@
         }
 
         .postersecondimg {
-          left: 28vw;
-          top: 39vw;
+          left: 6vw;
+    top: 54vw;
           font-size: 2vw;
 
         }
-        .buttonstylemain{
+        .posterthirdimg {
+          top: 55vw;
+    right: -55vw;
+          font-size: 2vw;
+
+        }
+
+        .buttonstylemain {
           font-size: 2vw;
           height: 5vw;
           width: 20vw;
@@ -145,12 +173,21 @@
         }
 
         .postersecondimg {
-          left: 28vw;
-          top: 39vw;
+          left: 6vw;
+    top: 54vw;
           font-size: 2vw;
+          
 
         }
-        .buttonstylemain{
+        .posterthirdimg {
+          top: 55vw;
+    right: -55vw;
+          font-size: 2vw;
+          
+
+        }
+
+        .buttonstylemain {
           font-size: 2vw;
           height: 5vw;
           width: 20vw;
@@ -202,13 +239,33 @@
       .marL {
         margin-left: 3vw;
       }
-      .postersecondimg{
+
+     
+
+      .servicesicon {
+        background: black !important;
+      }
+      .buttonstyle{
+        border-radius: 15px !important;
+        border-top-left-radius: 0 !important;
+      }
+    </style>
+
+    <style>
+       .postersecondimg {
         font-weight: bold;
+        background: white !important;
+        color: black !important;
+        border-radius: 80px !important;
+          border-top-left-radius: 0px !important;
       }
-      .servicesicon{
-        background:black !important;
+       .posterthirdimg {
+        font-weight: bold;
+        background: black !important;
+        color: white !important;
+        border-radius: 80px !important;
+          border-top-right-radius: 0px !important;
       }
-      
     </style>
 </head>
 
@@ -233,8 +290,7 @@
 
       <header>
         <div class="colorlib-navbar-brand">
-          <!-- <a class="colorlib-logo" href="/"><img src="/images/LOGO.png" alt="logo"
-              style="width: 106px; height: 43px;"></a> -->
+          <a class="colorlib-logo" href="/" style="color: white !important;font-size: 4vw;">Daintree</a>
         </div>
         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" style="background: black;"><i></i></a>
       </header>
@@ -407,26 +463,47 @@
           object-fit: cover;
           overflow: hidden;
         }
-        
+
+        .servicesicon {
+          background: black !important;
+          height: 80px;
+    width: 80px;
+    color: white;
+    font-size: 60px;
+    border-radius: 50%;
+    margin: 10px auto;
+        }
+        .iconbox{
+          margin:0 auto;
+        }
+        .icontext{
+          color: black;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    
+        }
       </style>
+      
       <section style="position: relative;">
 
 
-        <div class="imgcont"><img src="/images/1-01.jpg" alt="enroll now">
-          <a href="https://forms.gle/6y65hNUZbS4xuHMa9" class="btn btn-primary px-4 py-3 mainimgbutton buttonstylemain"
+        <div class="imgcont"><img src="/images/lp-01.jpg" alt="enroll now">
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 mainimgbutton buttonstylemain"
             style="
-              border: 1px solid black;
-background:black;
-color: white;
+              border: 1px solid white !important;
+background:white !important;
+color: black !important;
               border-radius: 13vw;
               border-top-left-radius: 0;
               font-weight: bold;
               box-sizing: border-box;
+              text-shadow: 3px 3px 3px rgb(37 36 36);
               
 display: block;
 
 position:absolute;
-top: 40vw;
+top: 54vw;
     left: 4vw;
   
 
@@ -436,59 +513,42 @@ top: 40vw;
 
 
       </section>
-            <section>
-              <div>
-                <h2 style="text-align:center;font-size: 6vw;
-                margin: 38px;">Offer till 30th October!</h2>
-                <a href="https://forms.gle/6y65hNUZbS4xuHMa9" class="btn btn-primary px-4 py-3 buttonstyle" style="
-                        border: 1px solid black;
-          background: black;
-          color: white;
-                        border-radius: 13vw;
-                        border-top-left-radius: 0;
-                        font-weight: bold;
-                        box-sizing: border-box;
-                        margin-left: auto;
-          margin-right: auto;
-          display: block;
-          margin-bottom: 40px;
-                        ">Enroll now !</a>
-              </div>
-            </section>
+      <section>
+        <div class="services d-flex ftco-animate" style="margin-top: 2vw;">
+          <div class="iconbox">
+
+            <div class="icon d-flex justify-content-center align-items-center servicesicon"><span
+                class="flaticon-photo-camera"></span></div><div class="icontext">999+ happy members</div>
+                <div class="icon d-flex justify-content-center align-items-center servicesicon"><span
+                  class="flaticon-shopping-bag"></span></div><div class="icontext">Personalised skin & hair care</div>
+          </div>
+            <div class="iconbox">
+
+           
+                  <div class="icon d-flex justify-content-center align-items-center servicesicon"><span
+                    class="flaticon-quality"></span></div><div class="icontext">Corporate Dress up</div>
+              <div class="icon d-flex justify-content-center align-items-center servicesicon"><span
+                  class="flaticon-megaphone"></span></div><div class="icontext">Lifestyle styling</div>
+            </div>
+
+        </div>
+      </section>
 
       <section style="position: relative;">
 
 
-        <div class="imgcont"><img src="/images/1-02.jpg" alt="enroll now">
-          <a href="https://forms.gle/6y65hNUZbS4xuHMa9" class="btn btn-primary px-4 py-3 buttonstyle postersecondimg"
-            style="
-              border: 1px solid white;
-background:white;
-color: black;
-              border-radius: 13vw;
-              border-top-left-radius: 0;
-              font-weight: bold;
-              box-sizing: border-box;
-              margin-left: auto;
-margin-right: auto;
-display: block;
-
-
-position: absolute;
-    
-
-              ">Enroll now !</a>
+        <div class="imgcont" style="margin:60px 0px;"><img src="/images/lp-02.jpg" alt="enroll now">
+         
         </div>
 
 
 
+     
       </section>
-    </section>
-    <section>
-      <div>
-        <h2 style="text-align:center;font-size: 6vw;
-        margin: 38px;">Offer till 30th October!</h2>
-        <a href="https://forms.gle/6y65hNUZbS4xuHMa9" class="btn btn-primary px-4 py-3 buttonstyle" style="
+      <section>
+        <div class="imgcont" style="position: relative;"><img src="/images/offer.png" alt="enroll now">
+         
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 buttonstyle" style="
                 border: 1px solid black;
   background: black;
   color: white;
@@ -500,14 +560,18 @@ position: absolute;
   margin-right: auto;
   display: block;
   margin-bottom: 40px;
+  position: absolute;
+  top: 19vw;
+    right: -37vw;
+
                 ">Enroll now !</a>
-      </div>
-    </section>
+        </div>
+      </section>
       <section style="position: relative;">
 
 
-        <div class="imgcont"><img src="/images/1-03.jpg" alt="enroll now">
-          <a href="https://forms.gle/6y65hNUZbS4xuHMa9" class="btn btn-primary px-4 py-3 buttonstyle postersecondimg"
+        <div class="imgcont"><img src="/images/lp-03.jpg" alt="enroll now">
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 buttonstyle postersecondimg"
             style="
           border: 1px solid white;
 background:white;
@@ -528,12 +592,86 @@ position: absolute;
 
 
       </section>
-    </section>
-    <section>
-      <div>
-        <h2 style="text-align:center;font-size: 6vw;
-        margin: 38px;">Offer till 30th October!</h2>
-        <a href="https://forms.gle/6y65hNUZbS4xuHMa9" class="btn btn-primary px-4 py-3 buttonstyle" style="
+      </section>
+      <section style="position: relative;">
+
+
+        <div class="imgcont"><img src="/images/lp-04.jpg" alt="enroll now">
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 buttonstyle posterthirdimg"
+            style="
+          border: 1px solid white;
+background:white;
+color: black;
+          border-radius: 13vw;
+          border-top-left-radius: 0;
+          font-weight: bold;
+          box-sizing: border-box;
+          margin-left: auto;
+margin-right: auto;
+display: block;
+position: absolute;
+
+
+          ">Enroll now !</a>
+        </div>
+
+
+
+      </section>
+      <section style="position: relative;">
+
+
+        <div class="imgcont"><img src="/images/lp-05.jpg" alt="enroll now">
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 buttonstyle postersecondimg"
+            style="
+          border: 1px solid white;
+background:white;
+color: black;
+          border-radius: 13vw;
+          border-top-left-radius: 0;
+          font-weight: bold;
+          box-sizing: border-box;
+          margin-left: auto;
+margin-right: auto;
+display: block;
+position: absolute;
+
+
+          ">Enroll now !</a>
+        </div>
+
+
+
+      </section>
+      <section style="position: relative;">
+
+
+        <div class="imgcont"><img src="/images/lp-06.jpg" alt="enroll now">
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 buttonstyle posterthirdimg"
+            style="
+          border: 1px solid white;
+background:white;
+color: black;
+          border-radius: 13vw;
+          border-top-left-radius: 0;
+          font-weight: bold;
+          box-sizing: border-box;
+          margin-left: auto;
+margin-right: auto;
+display: block;
+position: absolute;
+
+
+          ">Enroll now !</a>
+        </div>
+
+
+
+      </section>
+      <section>
+        <div class="imgcont" style="position: relative;"><img src="/images/offer.png" alt="enroll now">
+         
+          <a href="/enrollnow" class="btn btn-primary px-4 py-3 buttonstyle" style="
                 border: 1px solid black;
   background: black;
   color: white;
@@ -545,9 +683,13 @@ position: absolute;
   margin-right: auto;
   display: block;
   margin-bottom: 40px;
+  position: absolute;
+  top: 19vw;
+    right: -37vw;
+
                 ">Enroll now !</a>
-      </div>
-    </section>
+        </div>
+      </section>
 
 
       <section class="ftco-section testimony-section img">
@@ -555,7 +697,7 @@ position: absolute;
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-7 mb-5 text-center heading-section ftco-animate">
-              <h2 class="mb-4" style="font:bold; font-size:4.3vw">What Our Clients Say !</h2>
+              <h2 class="mb-4" style="font:bold; font-size:4vw">What Our Clients Say !</h2>
               <p>Customer Service shouldn't be a department, it should be the entire company. </p>
             </div>
           </div>
@@ -564,8 +706,9 @@ position: absolute;
               <div class="carousel-testimony owl-carousel">
                 <div class="item">
                   <div class="testimony-wrap text-center">
-                    <div class="user-img mb-5" style="background-image: url('/images/anjalijpg.jpg')">
-                      <span class="quote d-flex align-items-center justify-content-center" style="background: black !important;">
+                    <div class="user-img mb-5" style="background-image: url('/images/test1.jpg')">
+                      <span class="quote d-flex align-items-center justify-content-center"
+                        style="background: black !important;">
                         <i class="icon-quote-left"></i>
                       </span>
                     </div>
@@ -579,8 +722,9 @@ position: absolute;
                 </div>
                 <div class="item">
                   <div class="testimony-wrap text-center">
-                    <div class="user-img mb-5" style="background-image: url('/images/DIII.jpg')">
-                      <span class="quote d-flex align-items-center justify-content-center" style="background: black !important;">
+                    <div class="user-img mb-5" style="background-image: url('/images/test2.jpg')">
+                      <span class="quote d-flex align-items-center justify-content-center"
+                        style="background: black !important;">
                         <i class="icon-quote-left"></i>
                       </span>
                     </div>
@@ -633,7 +777,7 @@ position: absolute;
 
 
     <!-- changes made (moved section our services) -->
-    <section class="ftco-section-2">
+    <!-- <section class="ftco-section-2">
       <div class="container-fluid">
         <div class="section-2-blocks-wrapper d-flex row no-gutters">
           <div class="img col-md-6 ftco-animate" style="background-image: url('images/services.jpg');">
@@ -670,7 +814,7 @@ position: absolute;
               </div>
 
 
-              <!-- <div class="services d-flex ftco-animate">
+              <div class="services d-flex ftco-animate">
                   <div class="icon d-flex justify-content-center align-items-center"><span
                       class="flaticon-photo-camera"></span></div>
                   <div class="info ml-4">
@@ -679,7 +823,7 @@ position: absolute;
                     <p>Either you are bride or an attendant of Wedding don't worry we are here to guide you on how to
                       seprate yourself from rest and make your presence more Gorgeous and Memorable.</p>
                   </div>
-                </div> -->
+                </div>
 
 
               <div class="services d-flex ftco-animate">
@@ -700,9 +844,9 @@ position: absolute;
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <style>
-      .memberstext{
+      .memberstext {
         background: black !important;
       }
     </style>
@@ -772,10 +916,10 @@ position: absolute;
           <div class="col-md-3 model-entry ftco-animate">
             <div class="model-img" style="background-image: url(images/college.jpg);">
               <div class="name">
-                <h3><a href="model-single.html">College Student</a></h3>
+                <h3><a href="model-single.html">IT Professional</a></h3>
               </div>
               <div class="text memberstext">
-                <h3><a href="model-single.html">College Student</a></h3>
+                <h3><a href="model-single.html">IT Professional</a></h3>
 
               </div>
             </div>
@@ -866,20 +1010,20 @@ position: absolute;
       </div>
     </section> -->
     <style>
-      .company-header-avatar{
-    width: 240px;
-    height:240px;
-    -webkit-border-radius: 60px;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 60px;
-    -moz-background-clip: padding;
-    border-radius: 60px;
-    background-clip: padding-box;
-    margin: 7px 0 0 5px;
-    float: left;
-    background-size: cover;
-    background-position: center center;
-}
+      .company-header-avatar {
+        width: 240px;
+        height: 240px;
+        -webkit-border-radius: 60px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 60px;
+        -moz-background-clip: padding;
+        border-radius: 60px;
+        background-clip: padding-box;
+        margin: 7px 0 0 5px;
+        float: left;
+        background-size: cover;
+        background-position: center center;
+      }
     </style>
     <section class="ftco-section-2" style="margin-top: 20px; margin-bottom: 20px;">
       <div class="content-heading">
@@ -891,7 +1035,8 @@ position: absolute;
           <!-- <div class="img col-md-6 ftco-animate chngWidth"
             style="background-image: url('images/preeti.jpeg');background-size: 400px 400px;border-radius: 83%;">
           </div> -->
-          <div class="company-header-avatar" style="background-image: url('images/preeti.jpeg');margin-right: auto;margin-left: auto;"></div>
+          <div class="company-header-avatar"
+            style="background-image: url('images/preeti.jpeg');margin-right: auto;margin-left: auto;"></div>
           <div class="text col-md-6 ftco-animate" style="padding: 0; margin-right: auto;">
             <div class="text-inner" style="margin-top: 11px;">
               <h3 class="heading">Preeti sinha</h3>
@@ -900,12 +1045,12 @@ position: absolute;
                 <div class="info ml-4">
                   <h3>Senior Manager at Taggd
                   </h3>
-                  <p>IT HAS BEEN A GREAT EXPERIENCE TI BE A MENTOR OF THIS CLUB.
-                    THANKS TO DAINTREE FOR PROVING ME THIS OPPORTUNITY.
-                    TEACHING THEM CORPORATE ETIQUETTES 
-                    HELPING THEM TO GET JOB IN THEIR DREAM COMPANY.
-                    I REALLY ENJOYED EVERYTHING.
-                    I HEARTLY INVITE YOU ALL TO JOIN THE CLUB AND HAVE SOME WORK ON YOUR PERSONAL GROWTH.</p>
+                  <p>It has been a great experience to be a mentor of this club.
+                    Thanks to daintree for proving me this opportunity.
+                    Teaching them corporate etiquettes
+                    helping them to get job in their dream company.
+                    I really enjoyed everything.
+                    I heartly invite you all to join the club and have some work on your personal growth.</p>
                 </div>
               </div>
             </div>
@@ -915,7 +1060,7 @@ position: absolute;
     </section>
 
 
-   
+
 
     <section class="enquireUs">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
