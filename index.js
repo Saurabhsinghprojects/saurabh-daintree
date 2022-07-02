@@ -8,8 +8,8 @@ app.set('view engine', 'ejs')
 
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://DaintreeAdmin:DainPass@cluster0.sbgx7.mongodb.net/my_database', { useNewUrlParser: true });
-
+// mongoose.connect('mongodb+srv://DaintreeAdmin:DainPass@cluster0.sbgx7.mongodb.net/my_database', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://Saurabhiitism:Daintree@cluster0.hpcw3sn.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true });
 //  const bodyParser = require('body-parser')
 //  app.use(bodyParser.json())
 //  app.use(bodyParser.urlencoded({ extended: true }))
@@ -203,12 +203,12 @@ passport.deserializeUser(function (obj, cb) {
 
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const User = require('./models/User')
-const GOOGLE_CLIENT_ID = '684067796229-fon12gn38lt3o016o8rt1slenvd6anqp.apps.googleusercontent.com';
-const GOOGLE_CLIENT_SECRET = 'u0NX11oJc6ic18nTw9rwsfQg';
+const GOOGLE_CLIENT_ID = '1005471807557-k4itcqmf1255vpc0f166ptou9fkpog4b.apps.googleusercontent.com';
+const GOOGLE_CLIENT_SECRET = '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';
 passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: GOOGLE_CLIENT_SECRET,
-  callbackURL: "http://localhost:4000/auth/google/callback"
+  callbackURL: "https://saurabh-daintree.herokuapp.com/auth/google/callback"
 },
   function (accessToken, refreshToken, profile, done) {
     userProfile = profile;

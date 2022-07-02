@@ -6,6 +6,41 @@
 <head>
     <%- include('layouts/header'); -%>
 </head>
+<style>
+    /*    
+    @media only screen and (max-width: 600px) {
+        .enquirePage{
+          margin:39vw;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+        .enquirePage{
+            margin-left:39vw;
+      }
+    } */
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .enquirePage {
+            margin-left: 39vw !important;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .enquirePage {
+            margin-left: 39vw !important;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .enquirePage {
+            margin-left: 39vw !important;
+        }
+    }
+</style>
 
 <body>
     <div class="page">
@@ -16,7 +51,7 @@
                 <div class="colorlib-table-cell js-fullheight">
                     <div class="row no-gutters">
                         <div class="col-md-12 text-center">
-                            <h1 class="mb-4"><a href="/" class="logo">Look<br><span>Model Agency</span></a>
+                            <h1 class="mb-4"><a href="/" class="logo">Daintree<br><span>Be Memorable</span></a>
                             </h1>
                             <%- include('layouts/navbar'); -%>
                         </div>
@@ -27,7 +62,7 @@
         <div id="colorlib-page">
             <header>
                 <div class="colorlib-navbar-brand">
-                    <a class="colorlib-logo" href="/">Look<br><span>Model Agency</span></a>
+                    <a class="colorlib-logo" href="/" style="color: white !important;">Daintree</a>
                 </div>
                 <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
             </header>
@@ -40,58 +75,62 @@
                             <p class="breadcrumbs"><span class="mr-2"><a href="/">Home</a></span>
                                 <span>Contact</span>
                             </p>
-                            <h1 class="mb-5 bread">Enroll Now</h1>
+                            <h1 class="mb-5 bread">Enroll Now or Contact Us</h1>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section style="margin: 23px;">
+            <section class="enquirePage" style="margin: 23px;">
                 <div class="center hideform enquireBack" style="margin: 0 auto;display: inline-block;">
                     <h2>Enroll Now !!</h2>
                     <% if(errors !=null && errors.length>0){ %>
                         <div class="formError">
-                          <ul class="list-group">
-                            <% for(var i=0;i<errors.length; i++){ %>
-                              <li class="list-group-item list-group-item-danger" style="background-color:red;color: white;">
-                                <%=errors[i] %>
-                              </li>
-                              <% } %>
-                          </ul>
+                            <ul class="list-group">
+                                <% for(var i=0;i<errors.length; i++){ %>
+                                    <li class="list-group-item list-group-item-danger"
+                                        style="background-color:red;color: white;">
+                                        <%=errors[i] %>
+                                    </li>
+                                    <% } %>
+                            </ul>
                         </div>
                         <% } %>
-                    <!-- <button id="close" style="background: red; color: white;">X</button> -->
-                    <form action="/enquire/store" method="POST" style="color: black; border: 2px solid black; border-radius: 10px;padding: 13px; display: inline-block;"
-                      class="enquireForm">
-                      Name:<br>
-                      <input type="text" placeholder="Your name" id="username" name="username" value="<%=username %>">
-                      <br>
-                      Phone no:<br>
-                      <input type="tel" placeholder="Phone no." name="phone" id="phone" value="<%=phone %>" maxlength="10"
-                        pattern="\d{10}" title="Please enter exactly 10 digits">
-                      <br>
-                      <!-- E-mail:<br>
+                            <!-- <button id="close" style="background: red; color: white;">X</button> -->
+                            <form action="/enquire/store" method="POST"
+                                style="color: black; border: 2px solid black; border-radius: 10px;padding: 13px; display: inline-block;"
+                                class="enquireForm">
+                                Name:<br>
+                                <input type="text" placeholder="Your name" id="username" name="username"
+                                    value="<%=username %>">
+                                <br>
+                                Phone no:<br>
+                                <input type="tel" placeholder="Phone no." name="phone" id="phone" value="<%=phone %>"
+                                    maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits">
+                                <br>
+                                <!-- E-mail:<br>
                           <input type="email" placeholder="E-mail" name="email" id="email" value="<%=email %>">
                           <br> -->
-                      Age-group:<br>
-                      <label class="container">18-25
-                        <input type="radio" name="age" value="18-25" id="radio" checked>
-                      </label>
-                      <label class="container">26-30 <input type="radio" value="26-30" name="age" id="radio">
-                      </label>
-                      <label class="container">30+ <input type="radio" value="30+" name="age" id="radio">
-              
-                      </label> <br>
-                      Message:<br>
-                      <textarea name="message" id="message" cols="30" rows="10" style="resize: none; overflow-y: scroll;
+                                Age-group:<br>
+                                <label class="container">18-25
+                                    <input type="radio" name="age" value="18-25" id="radio" checked>
+                                </label>
+                                <label class="container">26-30 <input type="radio" value="26-30" name="age" id="radio">
+                                </label>
+                                <label class="container">30+ <input type="radio" value="30+" name="age" id="radio">
+
+                                </label> <br>
+                                Message:<br>
+                                <textarea name="message" id="message" cols="30" rows="10" style="resize: none; overflow-y: scroll;
                           height: 125px;"></textarea>
-                      <br>
-                      <input type="submit" value="Enquire" style="background: black; color: white; margin-top: 4px;">
-                    </form>
-              
-                  </div>
+                                <br>
+                                <input type="submit" value="Enquire"
+                                    style="background: black; color: white; margin-top: 4px;">
+                            </form>
+
+                </div>
             </section>
-           
+
 
             <%- include('layouts/footer'); -%>
 
@@ -149,10 +188,10 @@
                 </div>
             </div>
         </div>
+        
     </div>
     <%- include('layouts/scripts'); -%>
 </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/look/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Aug 2021 15:33:03 GMT -->
 
 </html>
